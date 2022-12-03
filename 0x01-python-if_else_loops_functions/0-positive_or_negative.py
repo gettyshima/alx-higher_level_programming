@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-
-def print_list_integer(my_list=[]):
-    """
-    Prints all integers of a list(one per line)
-    """
-    for x in range(len(my_list)):
-        print("{:d}".format(my_list[x]))
+import random
+number = random.randint(-10, 10)
+if number > 0:
+    print(number, 'is positive')
+elif (number == 0):
+    print(number, 'is zero')
+else:
+    print(number, 'is negative')
